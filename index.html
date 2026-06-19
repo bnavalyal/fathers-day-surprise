@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Father's Day Pappa ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+overflow:hidden;
+}
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url("photos/photo (3).jpg");
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+position:relative;
+}
+
+.content{
+max-width:800px;
+padding:20px;
+animation:fadeIn 2s ease;
+}
+
+.subtitle{
+font-family:'Dancing Script',cursive;
+font-size:3.5rem;
+color:#ffd166;
+margin-bottom:15px;
+}
+
+.title{
+font-size:5rem;
+font-weight:700;
+margin-bottom:20px;
+}
+
+.line{
+font-size:1.5rem;
+margin-bottom:10px;
+opacity:.9;
+}
+
+.line2{
+font-size:1.2rem;
+opacity:.8;
+margin-bottom:40px;
+}
+
+.btn{
+display:inline-block;
+padding:18px 40px;
+background:#ffd166;
+color:#111;
+text-decoration:none;
+border-radius:50px;
+font-weight:700;
+font-size:1.1rem;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.08);
+}
+
+.music-btn{
+position:absolute;
+top:20px;
+right:20px;
+background:#ffd166;
+border:none;
+padding:12px 20px;
+border-radius:30px;
+font-weight:bold;
+cursor:pointer;
+}
+
+.quote{
+position:absolute;
+bottom:50px;
+left:50%;
+transform:translateX(-50%);
+font-size:1rem;
+opacity:.8;
+width:90%;
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+@media(max-width:768px){
+
+.subtitle{
+font-size:2.2rem;
+}
+
+.title{
+font-size:3rem;
+}
+
+.line{
+font-size:1.1rem;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+
+
+<div class="content">
+
+<h2 class="subtitle">Happy Father's Day</h2>
+
+<h1 class="title">Pappa ❤️</h1>
+
+<p class="line">
+My First Hero.
+</p>
+
+<p class="line">
+My Forever Home.
+</p>
+
+<p class="line2">
+Every story has a hero.
+Mine was called Pappa.
+</p>
+
+<a href="childhood.html" class="btn">
+Begin Our Story ➜
+</a>
+
+</div>
+
+<div class="quote">
+"Ungli pakadke tune chalna sikhaya tha...
+Aaj bhi zindagi ke har mod par tera sahara mehsoos hota hai ❤️"
+</div>
+
+</div>
+
+
+<script>
+window.onload = () => {
+
+    const music = document.getElementById("bgMusic");
+
+    music.play().catch(() => {
+
+        document.addEventListener("click", () => {
+            music.play();
+        }, { once: true });
+
+    });
+
+};
+</script>
+
+</body>
+</html>
+```
