@@ -19,6 +19,7 @@ box-sizing:border-box;
 body{
 background:black;
 overflow-x:hidden;
+overflow-y:auto;
 font-family:'Montserrat',sans-serif;
 color:white;
 }
@@ -59,7 +60,7 @@ align-items:center;
 
 .slide img{
 max-width:90vw;
-max-height:75vh;
+max-height:55vh;
 width:auto;
 height:auto;
 object-fit:contain;
@@ -246,43 +247,78 @@ bottom:120%;
 
 @media(max-width:768px){
 
-.movie-title{
-font-size:1.6rem;
-top:15px;
-width:95%;
-text-align:center;
-white-space:normal;
-line-height:1.3;
-}
+.slide{
+display:flex;
+flex-direction:column;
+justify-content:flex-start;
+align-items:center;
 
-.caption{
-position:absolute;
-bottom:15px;
-left:50%;
-transform:translateX(-50%);
+padding-top:80px;
+padding-bottom:40px;
 
-width:92%;
-
-font-family:'Cormorant Garamond',serif;
-font-size:1.4rem;
-line-height:1.4;
-
-text-align:center;
-color:white;
-
-background:rgba(0,0,0,.6);
-
-padding:12px;
-
-border-radius:12px;
-
-text-shadow:0 0 10px rgba(0,0,0,.9);
+height:auto !important;
+min-height:100vh;
 }
 
 .slide img{
-max-width:95vw;
-max-height:65vh;
+max-width:92vw !important;
+max-height:50vh !important;
+margin-top:80px;
+}
+
+.caption{
+position:relative !important;
+bottom:auto !important;
+left:auto !important;
+transform:none !important;
+
+width:90% !important;
+
+margin-top:20px;
+
+font-size:1.3rem !important;
+line-height:1.4 !important;
+
+background:none !important;
+padding:10px !important;
+}
+
+.movie-title{
+font-size:1.2rem !important;
+top:10px !important;
+width:95% !important;
+text-align:center !important;
+white-space:normal !important;
+line-height:1.3 !important;
+}
+
+.caption{
+position:relative !important;
+bottom:auto !important;
+left:auto !important;
+transform:none !important;
+
+display:block !important;
+
+width:95% !important;
+
+margin:15px auto 0 auto !important;
+
+font-size:1.2rem !important;
+line-height:1.5 !important;
+
+text-align:center !important;
+
+background:rgba(0,0,0,.6);
+padding:12px;
+border-radius:12px;
+}
+
+.slide img{
+max-width:92vw;
+max-height:55vh;
 object-fit:contain;
+margin-top:20px;
 }
 }
 
@@ -484,18 +520,19 @@ top:20px !important;
 }
 
 .caption{
-font-size:1.3rem !important;
-line-height:1.4 !important;
-bottom:15px !important;
+font-size:1.1rem !important;
+line-height:1.5 !important;
 width:92% !important;
 padding:12px !important;
+margin-top:25px !important;
+margin-bottom:30px !important;
 }
-
 .slide img{
-max-width:95vw !important;
-max-height:60vh !important;
+width:auto !important;
+max-width:92vw !important;
+height:auto !important;
+max-height:50vh !important;
 }
-
 .memory-frame{
 width:100% !important;
 height:350px !important;
